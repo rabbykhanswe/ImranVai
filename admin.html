@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Admin Dashboard</h1>
+        <button id="logout-btn" class="btn btn-danger">Logout</button>
+    </header>
+
+    <div class="admin-wrapper">
+        <main class="admin-container">
+            
+            <section id="gallery-section">
+                <h2>Manage Gallery</h2>
+                <form id="gallery-form">
+                    <p>Upload a new file to replace an existing one. The update is live immediately.</p>
+                    
+                    <h3>Video Slider (5 Videos)</h3>
+                    <div class="gallery-item" id="item-video_1">
+                        <label>Video 1</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="video_1" data-key="video_1" accept="video/*">
+                    </div>
+                    <div class="gallery-item" id="item-video_2">
+                        <label>Video 2</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="video_2" data-key="video_2" accept="video/*">
+                    </div>
+                    <div class="gallery-item" id="item-video_3">
+                        <label>Video 3</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="video_3" data-key="video_3" accept="video/*">
+                    </div>
+                    <div class="gallery-item" id="item-video_4">
+                        <label>Video 4</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="video_4" data-key="video_4" accept="video/*">
+                    </div>
+                    <div class="gallery-item" id="item-video_5">
+                        <label>Video 5</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="video_5" data-key="video_5" accept="video/*">
+                    </div>
+
+                    <h3>Image Grid (4 Images)</h3>
+                    <div class="gallery-item" id="item-image_1">
+                        <label>Image 1</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="image_1" data-key="image_1" accept="image/*">
+                    </div>
+                    <div class="gallery-item" id="item-image_2">
+                        <label>Image 2</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="image_2" data-key="image_2" accept="image/*">
+                    </div>
+                    <div class="gallery-item" id="item-image_3">
+                        <label>Image 3</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="image_3" data-key="image_3" accept="image/*">
+                    </div>
+                    <div class="gallery-item" id="item-image_4">
+                        <label>Image 4</label>
+                        <span class="current-path"></span>
+                        <input type="file" name="image_4" data-key="image_4" accept="image/*">
+                    </div>
+                    
+                    </form>
+            </section>
+            
+            <section id="requests-section">
+                <h2>Contact Form Requests</h2>
+                <div class="table-container" id="requests-container">
+                    </div>
+            </section>
+    
+            <section id="reviews-section">
+                <h2>Customer Reviews</h2>
+                <div class="table-container" id="reviews-container">
+                    </div>
+            </section>
+
+        </main>
+    </div>
+
+    <div id="notification-popup"></div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
